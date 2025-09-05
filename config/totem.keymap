@@ -94,7 +94,7 @@
             bindings = <
         &kp CAPS   &trans    &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp PLUS
         &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &kp LCTRL  &trans    &trans    &trans     &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp BACKSLASH  &trans
+&trans  &kp LCTRL  &trans    &trans    &trans     &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp STAR  &trans
                              &trans    &trans     &trans      &mo 3     &kp N0  &trans
             >;
         };
@@ -108,17 +108,17 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
+            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     '     ┃     "     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
+            //             ┃    `/~    ┃     E     ┃     B     ┃     W     ┃     <     ┃   ┃     >     ┃     H     ┃     K     ┃   RSHFT   ┃     :     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
+            // ┃           ┃           ┃     V     ┃           ┃           ┃           ┃   ┃           ┃     J     ┃     L     ┃   RALT    ┃     \     ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp RA(U)  &kp SQT    &kp DQT
+        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp SQT    &kp DQT
         &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K      &kp RSHFT  &kp COLON
 &trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp J     &kp J      &kp RALT   &kp BSLH   &trans
                            &trans    &trans    &mo 3        &trans     &trans    &trans
