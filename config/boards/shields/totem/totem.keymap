@@ -9,33 +9,39 @@
 //                                                                      ▀  ▀  ▀
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-       
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
 #define SYM  2
 #define ADJ  3
+#define DEVICE 4
 
 &mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <170>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
 };
 
 / {
     combos {
-            compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
+        compatible = "zmk,combos";
+
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+
+        device_layer {
+            bindings = <&mo DEVICE>;
+            key-positions = <16 17 18>;
+        };
     };
 
     keymap {
@@ -114,7 +120,7 @@
             bindings = <
         &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp SQT    &kp DQT
         &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K      &kp RSHFT  &kp COLON
-&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp J     &kp J      &kp RALT   &kp BSLH   &trans
+&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp J     &kp L      &kp RALT   &kp BSLH   &trans
                            &trans    &trans    &mo 3        &trans     &trans    &trans
             >;
         };

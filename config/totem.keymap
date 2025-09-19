@@ -120,7 +120,7 @@
             bindings = <
         &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp SQT    &kp DQT
         &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K      &kp RSHFT  &kp COLON
-&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp J     &kp J      &kp RALT   &kp BSLH   &trans
+&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp J     &kp L      &kp RALT   &kp BSLH   &trans
                            &trans    &trans    &mo 3        &trans     &trans    &trans
             >;
         };
