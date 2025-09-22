@@ -193,9 +193,9 @@
 
         GameNUM {
             bindings = <
-        &kp ESC  &kp N1  &kp N2  &kp N3  &trans       &trans  &trans  &trans  &trans  &trans
-        &kp N0   &kp N4  &kp N5  &kp N6  &trans       &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp N7  &kp N8  &kp N9  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+        &kp ESC  &kp N1  &kp N2  &kp N3  &kp F1       &trans  &trans  &trans  &trans  &trans
+        &kp N0   &kp N4  &kp N5  &kp N6  &kp F2       &trans  &trans  &trans  &trans  &trans
+&kp F4  &kp F5   &kp N7  &kp N8  &kp N9  &kp F3       &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
