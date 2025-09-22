@@ -42,6 +42,11 @@
             bindings = <&mo DEVICE>;
             key-positions = <16 17 18>;
         };
+
+        GameToggle {
+            bindings = <&tog 5>;
+            key-positions = <2 3 6 7 8 1>;
+        };
     };
 
     keymap {
@@ -51,7 +56,9 @@
 
         base_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
             label = "BASE";
+
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     B     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
@@ -64,10 +71,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
-            &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt LALT I  &mt RGUI O
-&kp RALT    &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K    &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                                    &kp DEL      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
+          &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
+          &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt LALT I  &mt RGUI O
+&kp RALT  &kp Z       &kp X       &kp C        &kp D        &kp V        &kp K    &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
+                                  &kp DEL      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
             >;
         };
 
@@ -75,7 +82,9 @@
 
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
             label = "NAVI";
+
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃  C LOCK   ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
@@ -90,7 +99,7 @@
             bindings = <
         &kp CAPS   &trans    &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp PLUS
         &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &kp LCTRL  &trans    &trans    &trans     &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp STAR  &trans
+&trans  &kp LCTRL  &trans    &trans    &trans     &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp STAR   &trans
                              &trans    &trans     &trans      &mo 3     &kp N0  &trans
             >;
         };
@@ -99,7 +108,9 @@
 
         sim_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
             label = "SYM";
+
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     *     ┃     '     ┃     "     ┃
@@ -113,8 +124,8 @@
 
             bindings = <
         &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp SQT    &kp DQT
-        &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K      &kp RSHFT  &kp COLON
-&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp L      &kp J     &kp RALT   &kp BSLH   &trans
+        &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K     &kp RSHFT  &kp COLON
+&trans  &trans     &kp V   &trans    &trans    &trans       &trans     &kp L     &kp J     &kp RALT   &kp BSLH   &trans
                            &trans    &trans    &mo 3        &trans     &trans    &trans
             >;
         };
@@ -123,7 +134,9 @@
 
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
             label = "ADJ";
+
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃   PG_UP   ┃   PG_DN   ┃   HOME    ┃    END    ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
@@ -147,7 +160,9 @@
 
         Device {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
             label = "DEV";
+
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃    BT_0   ┃    BT_1   ┃    BT_2   ┃    BT_3   ┃    BT_4   ┃   ┃           ┃           ┃           ┃           ┃           ┃
@@ -164,6 +179,24 @@
         &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &out OUT_TOG  &bootloader   &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        GAME {
+            bindings = <
+         &kp LALT   &kp F  &kp W   &kp E   &kp R     &trans  &trans  &trans  &trans  &trans
+         &kp LSHFT  &kp A  &kp S   &kp D   &kp F     &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LCTRL  &kp Z  &kp X   &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        GameNUM {
+            bindings = <
+        &kp ESC  &kp N1  &kp N2  &kp N3  &trans       &trans  &trans  &trans  &trans  &trans
+        &kp N0   &kp N4  &kp N5  &kp N6  &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &kp N7  &kp N8  &kp N9  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &mo 6   &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
