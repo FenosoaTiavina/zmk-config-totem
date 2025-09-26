@@ -41,6 +41,7 @@
         device_layer {
             bindings = <&mo DEVICE>;
             key-positions = <16 17 18>;
+            layers = <0>;
         };
 
         GameToggle {
