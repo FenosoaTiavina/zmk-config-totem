@@ -22,10 +22,8 @@
 #define DEVICE 4
 
 &mt {
-    quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
 };
 
 / {
@@ -57,7 +55,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         base_layer {
-            label = "BASE";
+            display-name = "BASE";
             bindings = <
           &kp Q       &kp W       &kp F        &kp P        &kp B        &kp J    &kp L        &kp U        &kp Y       &kp SEMI
           &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G        &kp M    &mt RSHFT N  &mt RCTRL E  &mt LALT I  &mt RGUI O
@@ -69,7 +67,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
-            label = "NAVI";
+            display-name = "NAVI";
             bindings = <
         &kp CAPS   &trans    &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp PLUS
         &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp MINUS
@@ -81,7 +79,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         sim_layer {
-            label = "SYM";
+            display-name = "SYM";
             bindings = <
         &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp STAR  &kp SQT    &kp DQT
         &kp GRAVE  &kp E   &kp B     &kp W     &kp LT       &kp GT     &kp H     &kp K     &kp RSHFT  &kp COLON
@@ -93,7 +91,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         adjust_layer {
-            label = "ADJ";
+            display-name = "ADJ";
             bindings = <
         &kp PG_UP     &kp PG_DN      &kp HOME    &kp END     &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &kp C_VOL_DN  &kp C_VOL_UP   &kp K_MUTE  &kp K_PP    &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
@@ -105,7 +103,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         Device {
-            label = "DEV";
+            display-name = "DEV";
             bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
         &trans        &trans          &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
@@ -115,7 +113,7 @@
         };
 
         GAME {
-            label = "GMO";
+            display-name = "GMO";
             bindings = <
          &kp ESC    &kp Q  &kp X     &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
          &kp LSHFT  &kp A  &kp W     &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
@@ -125,7 +123,7 @@
         };
 
         GameNUM {
-            label = "GMN";
+            display-name = "GMN";
             bindings = <
          &kp F3  &kp N7  &kp N8  &kp N9        &kp F6    &trans  &trans  &trans  &trans  &trans
          &kp F2  &kp N4  &kp N5  &kp NUMBER_6  &kp F5    &trans  &trans  &trans  &trans  &trans
