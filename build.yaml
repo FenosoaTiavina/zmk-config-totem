@@ -1,7 +1,5 @@
 include:
   - board: xiao_ble//zmk
-    shield: totem_left raw_hid_adapter
-    snippet: studio-rpc-usb-uart 
+    shield: totem_left
   - board: xiao_ble//zmk
-    shield: totem_right raw_hid_adapter
-    snippet: studio-rpc-usb-uart 
+    shield: totem_right
